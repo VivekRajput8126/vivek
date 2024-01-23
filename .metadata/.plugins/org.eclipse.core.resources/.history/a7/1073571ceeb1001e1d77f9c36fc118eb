@@ -1,0 +1,20 @@
+package com.concurrent.p1;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Jtc1 {
+	public static void main(String[] args) {
+		//java.util.collection type object...
+		List<String> myList= new ArrayList<>();
+		myList.add("Vivek");
+		myList.add("Shakib");
+		myList.add("Arun");
+		myList.add("Preeti");
+		myList.add("Praveen");
+		
+		
+		
+		
+	}
+}

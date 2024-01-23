@@ -1,0 +1,29 @@
+package com.concurrent.p1;
+
+import java.util.Arrays;
+
+public class jtc5 {
+	public static void main(String[] args) {
+		String string= "The quick brown fox jumps over the lazy dog".toLowerCase();
+		int container[]= new int[26];
+		for(int i=0;i<string.length();i++) {
+			char ch=string.charAt(i);
+			if(ch>='a' && ch <= 'z') {
+				container[ch-'a']=1;
+			}
+		}
+		System.out.println(Arrays.toString(container));
+		int status=0;
+		for(int cha:container) {
+			if(cha==0) {
+				status=1;
+				break;
+			}
+		}
+		if(status==0) {
+			System.out.println("input String is a panagram");
+		}else {
+			System.out.println("input string isn't a panagram..");
+		}
+	}
+}

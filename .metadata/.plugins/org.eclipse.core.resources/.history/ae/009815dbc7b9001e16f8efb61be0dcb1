@@ -1,0 +1,28 @@
+package com.concurrent.p1;
+
+public class Jtc3 {
+	public static void main(String[] args) {
+		String str="The ".toLowerCase();
+		boolean[] bn = new boolean [26];
+		for(int i=0;i<str.length()-1;i++) {
+			char ch=str.charAt(i);
+			if(ch >= 'a' && ch <= 'z') {
+				bn[ch-'a']=true;
+			}
+		}
+		int status=0;
+		for(boolean bln:bn) {
+			if(bln=false) {
+				status=1;
+				break;
+			}
+		}
+		if(status==0) {
+			System.out.println("str is panagram..");
+		}else {
+			System.out.println("str isn't a panagram..");
+		}
+		
+		
+	}
+}

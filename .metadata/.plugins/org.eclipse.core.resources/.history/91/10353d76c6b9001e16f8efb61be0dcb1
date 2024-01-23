@@ -1,0 +1,10 @@
+package com.concurrent.p1;
+
+public class Jtc3 {
+	public static void main(String[] args) {
+		String str="This is a bed time";
+		boolean bn =str.contains("[^a-z]");
+		
+		
+	}
+}
